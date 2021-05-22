@@ -6,6 +6,84 @@
   padding-left: 15px;
   padding-right: 15px; }
 
+.header {
+  margin-top: 50px; }
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .header-logo__circle {
+    width: 20px;
+    height: 20px;
+    background-color: #9c69e2;
+    border-radius: 20px;
+    margin-right: 10px; }
+  .header-logo__ellipse {
+    width: 20px;
+    height: 35px;
+    background: #f063b8;
+    border-radius: 20px; }
+
+.header-nav {
+  margin-left: 120px; }
+  .header-nav__link + .header-nav__link {
+    margin-left: 40px; }
+  .header-nav__link {
+    font-size: 1.6rem;
+    color: #4b5d68; }
+
+.header-nav__link--active {
+  font-family: "avenir_black", sans-serif;
+  color: #212353;
+  font-weight: 700; }
+
+.header-action {
+  margin-left: auto; }
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "avenir_black", sans-serif;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-size: 1.6rem;
+  background-color: #fff;
+  padding: 10px;
+  color: #212353; }
+
+.btn-default {
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 16px 37px;
+  background-color: #9c69e2;
+  color: #fff; }
+
+.btn-transition {
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 16px 37px;
+  padding: 17px 48px 17px 30px; }
+  .btn-transition::after {
+    content: url("../images/arrow-right.svg");
+    position: relative;
+    top: 3px;
+    left: 15px; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,8 +92,9 @@
   font-size: 10px; }
 
 body {
-  color: #000;
-  font: 400 1rem "avenir", sans-serif; }
+  color: #4b5d68;
+  font: 400 1rem "avenir", sans-serif;
+  background-color: #f7fafd; }
 
 img {
   max-width: 100%; }
@@ -45,6 +124,14 @@ button {
   font-weight: "normal";
   src: url("../fonts/Avenir-Medium.woff2") format("woff2");
   src: url("../fonts/Avenir-Medium.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "avenir_black";
+  font-style: "normal";
+  font-weight: "normal";
+  src: url("../fonts/Avenir-Black.woff2") format("woff2");
+  src: url("../fonts/Avenir-Black.woff") format("woff"); }
 
 @font-face {
   font-display: swap;

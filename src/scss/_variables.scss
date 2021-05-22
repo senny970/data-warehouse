@@ -4,6 +4,10 @@ $fonts: (
     "woff2": "../fonts/Avenir-Medium.woff2",
     "woff": "../fonts/Avenir-Medium.woff",
   ),
+  "avenir_black": (
+    "woff2": "../fonts/Avenir-Black.woff2",
+    "woff": "../fonts/Avenir-Black.woff",
+  ),
   "helvetica_bold": (
     "woff": "../fonts/HelveticaBold.woff",
   ),
@@ -17,12 +21,21 @@ $fa-font-path: "../fonts";
 
 //Common
 $main-font: "avenir", sans-serif;
+$avenir-black: "avenir_black", sans-serif;
 $helvetica-bold: "helvetica_bold", sans-serif;
 $helvetica-medium: "helvetica_medium", sans-serif;
 
 $html-font-size: 10px;
-$body-font-color: #000;
+$body-font-color: #4b5d68;
+$body-font-color-bold: #212353;
+$body-background-color: #f7fafd;
 $body-font: $main-font;
 $body-fz: 1rem;
 $body-fw: 400;
 $body-lh: 1;
+
+$color-violet: #9c69e2;
+$color-pink: #f063b8;
+$color-white: #fff;
+
+$text-white: #fff;

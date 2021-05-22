@@ -1,0 +1,53 @@
+.header {
+  margin-top: 50px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: flex-end;
+
+  &__circle {
+    width: 20px;
+    height: 20px;
+    background-color: $color-violet;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+
+  &__ellipse {
+    width: 20px;
+    height: 35px;
+    background: $color-pink;
+    border-radius: 20px;
+  }
+}
+
+.header-nav {
+  margin-left: 120px;
+
+  &__link + &__link {
+    margin-left: 40px;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $body-font-color;
+  }
+}
+
+.header-nav__link {
+  &--active {
+    font-family: $avenir-black;
+    color: $body-font-color-bold;
+    font-weight: 700;
+  }
+}
+
+.header-action {
+  margin-left: auto;
+}

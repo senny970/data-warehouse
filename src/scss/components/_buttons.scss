@@ -1,0 +1,33 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: $avenir-black;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  font-size: 1.6rem;
+  background-color: $color-white;
+  padding: 10px;
+  color: $body-font-color-bold;
+}
+
+.btn-default {
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 16px 37px;
+  background-color: $color-violet;
+  color: $text-white;
+}
+
+.btn-transition {
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 16px 37px;
+  padding: 17px 48px 17px 30px;
+
+  &::after {
+    content: url("../images/arrow-right.svg");
+    position: relative;
+    top: 3px;
+    left: 15px;
+  }
+}
