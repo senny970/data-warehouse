@@ -1,0 +1,28 @@
+//Fonts
+$fonts: (
+  "avenir": (
+    "woff2": "../fonts/Avenir-Medium.woff2",
+    "woff": "../fonts/Avenir-Medium.woff",
+  ),
+  "helvetica_bold": (
+    "woff": "../fonts/HelveticaBold.woff",
+  ),
+  "helvetica_medium": (
+    "woff": "../fonts/HelveticaMedium.woff",
+  ),
+);
+
+//Font face FontAwesome
+$fa-font-path: "../fonts";
+
+//Common
+$main-font: "avenir", sans-serif;
+$helvetica-bold: "helvetica_bold", sans-serif;
+$helvetica-medium: "helvetica_medium", sans-serif;
+
+$html-font-size: 10px;
+$body-font-color: #000;
+$body-font: $main-font;
+$body-fz: 1rem;
+$body-fw: 400;
+$body-lh: 1;
