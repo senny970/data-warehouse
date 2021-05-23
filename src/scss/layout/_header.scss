@@ -1,8 +1,14 @@
 .header {
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
   margin-top: 50px;
 }
 
 .header-inner {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   align-items: center;
 }
@@ -28,13 +34,22 @@
 }
 
 .header-nav {
+  // @media screen and (max-width: 768px) {
+  //   display: none;
+  // }
+
+  display: inline-flex;
+  list-style: none;
   margin-left: 120px;
 
   &__link + &__link {
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
     margin-left: 40px;
   }
 
-  &__link {
+  &__link > a {
     font-size: 1.6rem;
     color: $body-font-color;
   }
@@ -51,3 +66,49 @@
 .header-action {
   margin-left: auto;
 }
+
+// SlickNav
+
+.slicknav_btn {
+  background-color: $color-violet;
+  // top: 5px;
+}
+
+.slicknav_menu {
+  display: none;
+
+  &::before {
+    content: url(../images/logo.svg);
+    position: relative;
+    top: 3px;
+    display: unset;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.slicknav_icon {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0px !important;
+  float: unset !important;
+}
+
+.slicknav_icon-bar {
+  height: 3px !important;
+  width: 20px !important;
+}
+
+.slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 3px !important;
+}
+
+.slicknav_btn {
+  padding: 8px !important;
+}
+
+// .slicknav_menutxt {
+//   font-size: 1.6rem;
+// }
