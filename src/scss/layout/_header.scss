@@ -1,3 +1,5 @@
+@import "../mixins/index";
+
 .header {
   @media screen and (max-width: 768px) {
     margin-top: 0;
@@ -5,11 +7,12 @@
 }
 
 .header-inner {
-  // @media screen and (max-width: 768px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 768px) {
+    height: unset;
+  }
   height: 100vh;
-  padding-top: 50px;
+  // padding-top: 50px;
+  @include adaptive-property("padding-top", 50, 25, 1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -117,7 +120,7 @@
 }
 
 .slicknav_btn {
-  padding: 8px !important;
+  padding: 10px !important;
 }
 
 // .slicknav_menutxt {
@@ -131,7 +134,15 @@
   // flex-direction: column;
   // justify-content: flex-end;
   position: relative;
+
   &::after {
+    @media screen and (max-width: 768px) {
+      background: unset;
+      content: unset;
+    }
+
+    @include adaptive-property("background-size", 885, 0, 1);
+
     content: "";
     width: 885px;
     height: 468px;
@@ -141,17 +152,30 @@
     left: 364px;
   }
 
+  &__mobile-img {
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    display: none;
+  }
+
   &__title {
     max-width: 645px;
+    @include adaptive-property("font-size", 80, 30, 1);
   }
 
   &__text {
-    margin-top: 50px;
+    // margin-top: 50px;
+    @include adaptive-property("margin-top", 50, 25, 1);
     max-width: 380px;
+    @include adaptive-property("font-size", 18, 15, 1);
   }
 
   &__btn {
-    margin-top: 50px;
+    // margin-top: 50px;
+    @include adaptive-property("margin-top", 50, 25, 1);
     margin-bottom: 100px;
+    // @include adaptive-property("margin-bottom", 100, 30, 1);
   }
 }

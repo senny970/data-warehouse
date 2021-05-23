@@ -19,6 +19,7 @@ body {
   color: $body-font-color;
   font: $body-fw $body-fz/$body-lh $body-font;
   background-color: $body-background-color;
+  overflow-x: hidden;
 }
 
 // ul {
