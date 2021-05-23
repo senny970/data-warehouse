@@ -69,7 +69,8 @@
   background-color: #9c69e2; }
 
 .slicknav_menu {
-  display: none; }
+  display: none;
+  background-color: rgba(240, 99, 184, 0.15); }
   .slicknav_menu::before {
     content: url(../images/logo.svg);
     position: relative;
