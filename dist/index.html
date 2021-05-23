@@ -12,40 +12,66 @@
     <header class="header">
       <div class="container">
         <div class="header-inner">
-          <div class="header-logo">
-            <div class="header-logo__circle"></div>
-            <div class="header-logo__ellipse"></div>
+          <div class="header-controls">
+            <div class="header-logo">
+              <div class="header-logo__circle"></div>
+              <div class="header-logo__ellipse"></div>
+            </div>
+            <ul class="header-nav" id="menu">
+              <li class="header-nav__link header-nav__link--active">
+                <a href="#">About</a>
+              </li>
+              <li class="header-nav__link">
+                <a href="#">Help</a>
+              </li>
+              <li class="header-nav__link">
+                <a href="#">Features</a>
+              </li>
+              <li class="header-nav__link">
+                <a href="#">Signup</a>
+              </li>
+            </ul>
+            <div class="header-action">
+              <button class="header-action__btn btn btn-transition">
+                Request Demo
+              </button>
+            </div>
           </div>
-          <!-- <div class="header-nav">
-            <a href="#" class="header-nav__link header-nav__link--active"
-              >About</a
-            >
-            <a href="#" class="header-nav__link">Help</a>
-            <a href="#" class="header-nav__link">Features</a>
-            <a href="#" class="header-nav__link">Signup</a>
-          </div> -->
-          <ul class="header-nav" id="menu">
-            <li class="header-nav__link header-nav__link--active">
-              <a href="#">About</a>
-            </li>
-            <li class="header-nav__link">
-              <a href="#">Help</a>
-            </li>
-            <li class="header-nav__link">
-              <a href="#">Features</a>
-            </li>
-            <li class="header-nav__link">
-              <a href="#">Signup</a>
-            </li>
-          </ul>
-          <div class="header-action">
-            <button class="header-action__btn btn btn-transition">
-              Request Demo
+          <div class="header-content">
+            <h1 class="title title--h1 header-content__title">
+              Save your data storage here.
+            </h1>
+            <p class="paragraph header-content__text">
+              Data Warehouse is a data storage area that has been tested for
+              security, so you can store your data here safely but not be afraid
+              of being stolen by others.
+            </p>
+            <button class="header-content__btn btn btn-default">
+              Learn more
             </button>
           </div>
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="test">
+        <div class="container">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque at
+            quae repellendus illo quisquam perspiciatis labore enim voluptate
+            velit quos neque autem magni, mollitia ex nostrum, voluptates
+            praesentium! Deserunt, quia. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Molestias veniam, porro magnam, veritatis
+            assumenda animi repellendus beatae reprehenderit officia vel
+            voluptate asperiores corrupti aliquid! Odio atque inventore corporis
+            fugit quia! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Ipsum optio nihil laborum sequi odit necessitatibus atque,
+            praesentium itaque ullam delectus eius enim quaerat eos ipsam veniam
+            eum doloremque? Aperiam, reprehenderit!
+          </p>
+        </div>
+      </section>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -55,7 +81,8 @@
     <script>
       $(function () {
         $("#menu").slicknav({
-          appendTo: ".header",
+          // appendTo: ".header",
+          prependTo: ".header",
           // appendTo: ".header-inner",
           // prependTo: ".header-inner",
           label: "",
