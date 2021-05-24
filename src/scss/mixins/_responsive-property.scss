@@ -1,0 +1,57 @@
+@mixin responsive-property(
+  $property,
+  $startValue,
+  $endValue,
+  $mode,
+  $minWidthContainer,
+  $maxWidthContainer
+) {
+  $addSize: $startValue - $endValue;
+
+  @if $mode == 1 {
+    //if < container
+    #{$property}: $startValue + px;
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$endValue + px} + #{$addSize} *
+          (
+            (100vw - #{$minWidthContainer + px}) / #{$maxWidthContainer -
+              $minWidthContainer}
+          )
+      );
+    }
+  } @else if $mode == 2 {
+    //if > container
+    #{$property}: $startValue + px;
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$endValue + px} + #{$addSize} *
+          (
+            (100vw - #{$minWidthContainer + px}) / #{$maxWidth -
+              $minWidthContainer}
+          )
+      );
+    }
+  } @else {
+    //always
+    #{$property}: calc(
+      #{$endValue +
+        px} +
+        #{$addSize} *
+        (
+          (100vw - #{$minWidthContainer + px}) /
+            #{$maxWidthContainer -
+            $minWidthContainer}
+        )
+    );
+  }
+}
+
+// padding - property
+// 50 - template padding value
+// 20 - min padding value
+// 0 - mode
+// 1120 - max container width
+// 320 - min container width
+
+//@include responsive-property("padding", 50, 20, 1, 1120, 320);

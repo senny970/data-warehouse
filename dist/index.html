@@ -62,14 +62,25 @@
       <section class="section storage-bank-section">
         <div class="container">
           <div class="storage-bank">
-            <div class="storage-bank__img">
-              <img src="images/storage-bank.png" alt="storage-bank" />
+            <div class="storage-bank-img">
+              <!-- <img
+                class="storage-bank-img__source"
+                src="images/storage-bank.png"
+                alt="storage-bank"
+              /> -->
+              <picture class="storage-bank-img__container">
+                <source
+                  srcset="images/storage-bank-mobile.png"
+                  media="(max-width: 425px)"
+                />
+                <img src="images/storage-bank.png" alt="MDN" />
+              </picture>
             </div>
-            <div class="storage-bank__text">
-              <h1 class="storage-bank__title title title--h3">
+            <div class="storage-bank-text">
+              <h1 class="storage-bank-text__title title title--h3">
                 We are a high-level data storage bank
               </h1>
-              <div class="storage-bank__paragraph paragraph">
+              <div class="storage-bank-text__paragraph paragraph">
                 The place to store various data that you can access at any time
                 through the internet and where you can carry it. <br />
                 This very flexible storage area has a high level of security. To

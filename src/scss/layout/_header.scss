@@ -177,5 +177,6 @@
     @include adaptive-property("margin-top", 50, 25, 1);
     margin-bottom: 100px;
     // @include adaptive-property("margin-bottom", 100, 30, 1);
+    @include responsive-property("margin-bottom", 100, 40, 1, 320, 1120);
   }
 }

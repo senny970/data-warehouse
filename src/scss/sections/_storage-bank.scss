@@ -1,30 +1,96 @@
 $storage-bank-bg: rgba(240, 99, 184, 0.15);
 
 .storage-bank-section {
+  @media screen and (min-width: 767px) {
+    @include responsive-property("margin-top", 100, 0, 1, 767, 1120);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
   margin-top: 100px;
 }
 
 .storage-bank {
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   background-color: $storage-bank-bg;
   border-radius: 50px;
   display: flex;
+}
 
-  &__img {
-    height: 504px;
-    width: 50%;
-    padding: 30px 0px 0px 10px;
+.storage-bank-img {
+  @include responsive-property("height", 504, 290, 1, 320, 507);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  &__text {
-    width: 50%;
-    padding: 125px 70px 115px 0px;
+  &__source {
+    height: 100%;
+    object-fit: contain;
   }
+
+  &__container {
+    @media screen and (max-width: 425px) {
+      padding: 30px 30px 0 30px;
+    }
+  }
+
+  height: 504px;
+  width: 50%;
+  padding: 30px 0px 0px 10px;
+}
+
+.storage-bank-text {
+  @media screen and (min-width: 767px) {
+    @include responsive-property("padding-bottom", 115, 0, 1, 767, 1120);
+    @include responsive-property("padding-top", 125, 75, 1, 767, 1120);
+  }
+
+  @media screen and (max-width: 768px) {
+    @include responsive-property("padding-left", 50, 20, 1, 320, 767);
+    @include responsive-property("padding-right", 50, 20, 1, 320, 767);
+    @include responsive-property("padding-bottom", 80, 40, 1, 320, 767);
+    width: 100%;
+    padding: 0 50px 80px 50px;
+  }
+
+  width: 50%;
+  padding: 125px 70px 115px 0px;
 
   &__title {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      text-align: center;
+      @include responsive-property("font-size", 40, 25, 1, 320, 767);
+    }
+
+    @media screen and (min-width: 767px) {
+      @include responsive-property("font-size", 40, 30, 1, 767, 1120);
+    }
+
     line-height: 130%;
+    font-size: 40px;
   }
 
   &__paragraph {
+    @media screen and (min-width: 767px) {
+      @include responsive-property("font-size", 18, 16, 1, 767, 1120);
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      @include responsive-property("padding-left", 50, 0, 1, 320, 767);
+      @include responsive-property("padding-right", 50, 0, 1, 320, 767);
+      @include responsive-property("font-size", 18, 16, 1, 320, 767);
+    }
+
     font-size: 18px;
     line-height: 160%;
     padding-top: 40px;
