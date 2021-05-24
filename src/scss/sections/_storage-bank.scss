@@ -1,0 +1,31 @@
+$storage-bank-bg: rgba(240, 99, 184, 0.15);
+
+.storage-bank-section {
+  margin-top: 100px;
+}
+
+.storage-bank {
+  background-color: $storage-bank-bg;
+  border-radius: 50px;
+  display: flex;
+
+  &__img {
+    padding: 30px 0px 0px 10px;
+    min-width: 477px;
+    height: 504px;
+  }
+
+  &__text {
+    padding: 125px 80px 115px 60px;
+  }
+
+  &__title {
+    line-height: 130%;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    line-height: 160%;
+    padding-top: 40px;
+  }
+}

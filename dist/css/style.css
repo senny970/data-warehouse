@@ -222,17 +222,40 @@
     top: 3px;
     left: 15px; }
 
-.title {
+.title,
+.title--h1,
+.title--h3 {
   font-family: "helvetica_bold", sans-serif;
   color: #212353; }
 
-.title--h1 {
-  font-family: "helvetica_bold", sans-serif;
-  color: #212353; }
+.title--h3 {
+  font-size: 4rem; }
 
 .paragraph {
   font-family: "avenir", sans-serif;
   line-height: 160%; }
+
+.storage-bank-section {
+  margin-top: 100px; }
+
+.storage-bank {
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .storage-bank__img {
+    padding: 30px 0px 0px 10px;
+    min-width: 477px;
+    height: 504px; }
+  .storage-bank__text {
+    padding: 125px 80px 115px 60px; }
+  .storage-bank__title {
+    line-height: 130%; }
+  .storage-bank__paragraph {
+    font-size: 18px;
+    line-height: 160%;
+    padding-top: 40px; }
 
 * {
   -webkit-box-sizing: border-box;
