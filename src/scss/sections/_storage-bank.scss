@@ -10,13 +10,14 @@ $storage-bank-bg: rgba(240, 99, 184, 0.15);
   display: flex;
 
   &__img {
-    padding: 30px 0px 0px 10px;
-    min-width: 477px;
     height: 504px;
+    width: 50%;
+    padding: 30px 0px 0px 10px;
   }
 
   &__text {
-    padding: 125px 80px 115px 60px;
+    width: 50%;
+    padding: 125px 70px 115px 0px;
   }
 
   &__title {

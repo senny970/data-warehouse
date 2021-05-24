@@ -245,11 +245,12 @@
   display: -ms-flexbox;
   display: flex; }
   .storage-bank__img {
-    padding: 30px 0px 0px 10px;
-    min-width: 477px;
-    height: 504px; }
+    height: 504px;
+    width: 50%;
+    padding: 30px 0px 0px 10px; }
   .storage-bank__text {
-    padding: 125px 80px 115px 60px; }
+    width: 50%;
+    padding: 125px 70px 115px 0px; }
   .storage-bank__title {
     line-height: 130%; }
   .storage-bank__paragraph {
