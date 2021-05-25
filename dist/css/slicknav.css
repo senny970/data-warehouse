@@ -158,7 +158,8 @@
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  background: #ccc;
+  /* background: #ccc; */
+  background: #fff;
   color: #222;
 }
 .slicknav_nav .slicknav_txtnode {

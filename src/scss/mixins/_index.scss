@@ -2,5 +2,6 @@
 @import "font-face";
 @import "adaptive-property";
 @import "responsive-property";
+@import "transforms";
 
 @include generate-font-face($fonts);
