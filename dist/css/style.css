@@ -687,15 +687,18 @@
   position: relative; }
 
 .slick-prev-testiomonials {
-  right: 36px;
+  right: 0;
   left: unset; }
   .slick-prev-testiomonials::before {
-    content: url("../images/testimonials/left-arrow.svg");
+    content: url("../images/testimonials/right-arrow.svg");
     position: relative; }
 
-.slick-next-testiomonials::before {
-  content: url("../images/testimonials/right-arrow.svg");
-  position: relative; }
+.slick-next-testiomonials {
+  right: 62px;
+  left: unset; }
+  .slick-next-testiomonials::before {
+    content: url("../images/testimonials/left-arrow.svg");
+    position: relative; }
 
 * {
   -webkit-box-sizing: border-box;

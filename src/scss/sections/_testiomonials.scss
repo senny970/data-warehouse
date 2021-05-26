@@ -88,18 +88,22 @@
 }
 
 .slick-prev-testiomonials {
-  right: 36px;
+  // right: 36px;
+  right: 0;
   left: unset;
 
   &::before {
-    content: url("../images/testimonials/left-arrow.svg");
+    content: url("../images/testimonials/right-arrow.svg");
     position: relative;
   }
 }
 
 .slick-next-testiomonials {
+  right: 62px;
+  left: unset;
+
   &::before {
-    content: url("../images/testimonials/right-arrow.svg");
+    content: url("../images/testimonials/left-arrow.svg");
     position: relative;
   }
 }
