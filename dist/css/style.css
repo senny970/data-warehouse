@@ -687,8 +687,15 @@
   position: relative; }
 
 .slick-prev-testiomonials {
-  right: 0;
+  right: 36px;
   left: unset; }
+  .slick-prev-testiomonials::before {
+    content: url("../images/testimonials/left-arrow.svg");
+    position: relative; }
+
+.slick-next-testiomonials::before {
+  content: url("../images/testimonials/right-arrow.svg");
+  position: relative; }
 
 * {
   -webkit-box-sizing: border-box;
