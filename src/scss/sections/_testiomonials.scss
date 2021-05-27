@@ -1,15 +1,58 @@
 .testimonials-section {
+  @media screen and (max-width: 1120px) and (min-width: 800px) {
+    @include responsive-property("margin-top", 150, 75, 1, 800, 1120);
+    @include responsive-property("margin-bottom", 150, 75, 1, 800, 1120);
+  }
+
+  @media screen and (max-width: 800px) and (min-width: 768px) {
+    @include responsive-property("margin-top", 75, 75, 1, 768, 800);
+    @include responsive-property("margin-bottom", 75, 75, 1, 768, 800);
+  }
+
   margin: 150px 0 150px 0;
 }
 
 .testiomonials {
+  @media screen and (max-width: 1120px) and (min-width: 800px) {
+    @include responsive-property("padding-top", 110, 50, 1, 800, 1120);
+    @include responsive-property("padding-left", 95, 70, 1, 800, 1120);
+    @include responsive-property("height", 687, 560, 1, 800, 1120);
+  }
+
+  @media screen and (max-width: 800px) and (min-width: 768px) {
+    @include responsive-property("padding-top", 50, 50, 1, 768, 800);
+    @include responsive-property("padding-left", 70, 70, 1, 768, 800);
+    @include responsive-property("height", 560, 490, 1, 768, 800);
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    @include responsive-property("padding-top", 50, 30, 1, 320, 768);
+    @include responsive-property("padding-left", 70, 10, 1, 320, 768);
+    @include responsive-property("padding-right", 70, 10, 1, 320, 768);
+    @include responsive-property("height", 490, 385, 1, 320, 768);
+  }
+
   background-color: $color-violet;
-  padding: 110px 95px 60px 95px;
+  padding: 110px 0px 60px 95px;
   border-radius: 50px;
   // height: 710px;
   height: 687px;
 
   &__title {
+    @media screen and (max-width: 1120px) and (min-width: 800px) {
+      @include responsive-property("padding-bottom", 88, 30, 1, 800, 1120);
+    }
+
+    @media screen and (max-width: 800px) and (min-width: 768px) {
+      @include responsive-property("padding-bottom", 30, 30, 1, 768, 800);
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+      @include responsive-property("padding-bottom", 30, 10, 1, 320, 768);
+      @include responsive-property("font-size", 40, 30, 1, 320, 768);
+      text-align: center;
+    }
+
     font-size: 40px;
     line-height: 130%;
     color: $color-white;
@@ -17,6 +60,13 @@
   }
 
   &-slide {
+    @media screen and (max-width: 800px) and (min-width: 768px) {
+      @include responsive-property("padding-top", 60, 40, 1, 768, 800);
+      @include responsive-property("padding-bottom", 50, 40, 1, 768, 800);
+      @include responsive-property("padding-left", 70, 40, 1, 768, 800);
+      @include responsive-property("padding-right", 70, 40, 1, 768, 800);
+    }
+
     width: max-content;
     background-color: $color-white;
     padding: 60px 70px 50px 70px;
@@ -30,7 +80,27 @@
   }
 }
 
+.testiomonials-carousel {
+  @media screen and (max-width: 600px) and (min-width: 320px) {
+    margin-bottom: 15px !important;
+  }
+}
+
 .testiomonials-slide {
+  @media screen and (max-width: 800px) and (min-width: 768px) {
+    @include responsive-property("height", 307, 240, 1, 768, 800);
+    @include responsive-property("max-height", 307, 240, 1, 768, 800);
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    @include responsive-property("padding-top", 40, 15, 1, 320, 768);
+    @include responsive-property("padding-bottom", 40, 15, 1, 320, 768);
+    @include responsive-property("padding-left", 40, 15, 1, 320, 768);
+    @include responsive-property("padding-right", 40, 15, 1, 320, 768);
+    @include responsive-property("height", 240, 230, 1, 320, 768);
+    @include responsive-property("max-height", 240, 230, 1, 320, 768);
+  }
+
   display: flex;
   max-width: 645px;
   height: 307px;
@@ -63,6 +133,23 @@
   }
 
   &__description {
+    @media screen and (max-width: 800px) and (min-width: 768px) {
+      @include responsive-property("font-size", 18, 16, 1, 768, 800);
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 425px) {
+      @include responsive-property("max-width", 380, 165, 1, 425, 768);
+    }
+
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      @include responsive-property("max-width", 165, 120, 1, 320, 425);
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+      @include responsive-property("font-size", 16, 12, 1, 320, 768);
+      @include responsive-property("padding-top", 20, 5, 1, 320, 768);
+    }
+
     font-size: 18px;
     line-height: 180%;
     padding-top: 20px;
@@ -70,15 +157,30 @@
   }
 }
 
+//Slick slider
+
 .slick-list {
+  @media screen and (max-width: 801px) {
+    overflow: hidden;
+  }
   overflow: visible;
 }
 
-//Slick slider
-
 .slick-dots {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
   width: auto;
   bottom: 0;
+}
+
+.slick-dots {
+  li {
+    button::before {
+      opacity: 1;
+      color: #fff;
+    }
+  }
 }
 
 .testiomonials-controls {
@@ -88,8 +190,11 @@
 }
 
 .slick-prev-testiomonials {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
   // right: 36px;
-  right: 0;
+  right: 95px;
   left: unset;
 
   &::before {
@@ -99,11 +204,18 @@
 }
 
 .slick-next-testiomonials {
-  right: 62px;
+  right: 157px;
   left: unset;
 
   &::before {
     content: url("../images/testimonials/left-arrow.svg");
     position: relative;
+  }
+}
+
+.slick-prev-testiomonials,
+.slick-next-testiomonials {
+  @media screen and (max-width: 768px) {
+    display: none !important;
   }
 }
