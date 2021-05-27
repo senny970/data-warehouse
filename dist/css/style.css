@@ -218,6 +218,9 @@
 
 .try-free-actions__btn {
   margin-left: 30px; }
+  @media screen and (max-width: 815px) {
+    .try-free-actions__btn {
+      margin-left: 5px; } }
 
 .nav-info {
   display: -webkit-box;
@@ -251,6 +254,15 @@
     font-size: 20px;
     color: #212353;
     padding-left: 20px; }
+
+.footer-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
 
 .footer-nav {
   display: -webkit-box;
@@ -310,7 +322,10 @@
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .copyright__text {
     font-size: 12px; }
   .copyright__callback {
@@ -318,8 +333,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(156, 105, 226, 0.2);
-    margin-right: 15px; }
+    background-color: rgba(156, 105, 226, 0.2); }
     .copyright__callback::after {
       content: url("../images/footer/message_icon.svg");
       left: 24%;

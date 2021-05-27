@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/slicknav.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Data Warehouse</title>
   </head>
@@ -14,7 +15,11 @@
     <header class="header">
       <div class="container">
         <div class="header-inner">
-          <div class="header-controls">
+          <div
+            class="header-controls"
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
             <div class="header-logo">
               <div class="header-logo__circle"></div>
               <div class="header-logo__ellipse"></div>
@@ -45,7 +50,12 @@
               src="images/header-img.png"
               alt="mobile-img"
             />
-            <h1 class="header-content__title title title--h1">
+            <h1
+              class="header-content__title title title--h1"
+              data-aos="fade-in"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
               Save your data storage here.
             </h1>
             <p class="paragraph header-content__text">
@@ -53,7 +63,12 @@
               security, so you can store your data here safely but not be afraid
               of being stolen by others.
             </p>
-            <button class="header-content__btn btn btn-default">
+            <button
+              class="header-content__btn btn btn-default"
+              data-aos="fade-right"
+              data-aos-duration="400"
+              data-aos-delay="700"
+            >
               Learn more
             </button>
           </div>
@@ -61,7 +76,11 @@
       </div>
     </header>
     <main class="main">
-      <section class="section storage-bank-section">
+      <section
+        class="section storage-bank-section"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
         <div class="container">
           <div class="storage-bank">
             <div class="storage-bank-img">
@@ -96,8 +115,18 @@
       <section class="section features-section">
         <div class="container">
           <div class="features-section-wrapper">
-            <h4 class="title features-section__title">Features</h4>
-            <p class="paragraph features-section__paragraph">
+            <h4
+              class="title features-section__title"
+              data-aos="fade-left"
+              data-aos-duration="200"
+            >
+              Features
+            </h4>
+            <p
+              class="paragraph features-section__paragraph"
+              data-aos="fade-in"
+              data-aos-duration="100"
+            >
               Some of the features and advantages that we provide for those of
               you who store data in this Data Warehouse.
             </p>
@@ -107,7 +136,11 @@
                 src="images/features/search-data__icon.png"
                 alt="24-hours-access"
               />
-              <div class="features-item features-item--search-data">
+              <div
+                class="features-item features-item--search-data"
+                data-aos="flip-left"
+                data-aos-delay="200"
+              >
                 <h4 class="features-item__title title-medium">Search Data</h4>
                 <p class="paragraph features-item__text">
                   Don’t worry if your data is very large, the Data Warehoue
@@ -125,7 +158,11 @@
                 src="images/features/24-hours-access__icon.png"
                 alt="24-hours-access"
               />
-              <div class="features-item features-item--24-hours-access">
+              <div
+                class="features-item features-item--24-hours-access"
+                data-aos="flip-left"
+                data-aos-delay="600"
+              >
                 <h4 class="features-item__title title-medium">
                   24 Hours Access
                 </h4>
@@ -145,7 +182,11 @@
                 src="images/features/print-out__icon.png"
                 alt="24-hours-access"
               />
-              <div class="features-item features-item--print-out">
+              <div
+                class="features-item features-item--print-out"
+                data-aos="flip-left"
+                data-aos-delay="200"
+              >
                 <h4 class="features-item__title title-medium">Print Out</h4>
                 <p class="paragraph features-item__text">
                   Print out service gives you convenience if someday you need
@@ -162,7 +203,11 @@
                 src="images/features/security-code__icon.png"
                 alt="24-hours-access"
               />
-              <div class="features-item features-item--security-code">
+              <div
+                class="features-item features-item--security-code"
+                data-aos="flip-left"
+                data-aos-delay="600"
+              >
                 <h4 class="features-item__title title-medium">Security Code</h4>
                 <p class="paragraph features-item__text">
                   Data Security is one of our best facilities. Allows for your
@@ -179,7 +224,11 @@
           </div>
         </div>
       </section>
-      <section class="section testimonials-section">
+      <section
+        class="section testimonials-section"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="container">
           <div class="testiomonials">
             <h4 class="title testiomonials__title">Testiomonials</h4>
@@ -308,21 +357,23 @@
                 1-232-3434 (Main)
               </p>
             </div>
-            <nav class="footer-nav footer-nav--about">
-              <span class="footer-nav__title">About</span>
-              <a class="footer-nav__link" href="#">Profile</a>
-              <a class="footer-nav__link" href="#">Features</a>
-              <a class="footer-nav__link" href="#">Careers</a>
-              <a class="footer-nav__link" href="#">DW News</a>
-            </nav>
-            <nav class="footer-nav footer-nav--help">
-              <span class="footer-nav__title">Help</span>
-              <a class="footer-nav__link" href="#">Support</a>
-              <a class="footer-nav__link" href="#">Sign up</a>
-              <a class="footer-nav__link" href="#">Guide</a>
-              <a class="footer-nav__link" href="#">Reports</a>
-              <a class="footer-nav__link" href="#">Q&A</a>
-            </nav>
+            <div class="footer-nav-container">
+              <nav class="footer-nav footer-nav--about">
+                <span class="footer-nav__title">About</span>
+                <a class="footer-nav__link" href="#">Profile</a>
+                <a class="footer-nav__link" href="#">Features</a>
+                <a class="footer-nav__link" href="#">Careers</a>
+                <a class="footer-nav__link" href="#">DW News</a>
+              </nav>
+              <nav class="footer-nav footer-nav--help">
+                <span class="footer-nav__title">Help</span>
+                <a class="footer-nav__link" href="#">Support</a>
+                <a class="footer-nav__link" href="#">Sign up</a>
+                <a class="footer-nav__link" href="#">Guide</a>
+                <a class="footer-nav__link" href="#">Reports</a>
+                <a class="footer-nav__link" href="#">Q&A</a>
+              </nav>
+            </div>
             <div class="social-media">
               <span class="social-media__title footer-nav__title"
                 >Social Media</span
@@ -382,6 +433,10 @@
           label: "",
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

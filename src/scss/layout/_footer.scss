@@ -25,6 +25,9 @@
 
 .try-free-actions {
   &__btn {
+    @media screen and (max-width: 815px) {
+      margin-left: 5px;
+    }
     margin-left: 30px;
   }
 }
@@ -60,6 +63,12 @@
     color: $body-font-color-bold;
     padding-left: 20px;
   }
+}
+
+.footer-nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .footer-nav {
@@ -133,6 +142,7 @@
   margin-top: 95px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__text {
     font-size: 12px;
@@ -144,7 +154,6 @@
     height: 50px;
     border-radius: 50%;
     background-color: rgba(156, 105, 226, 0.2);
-    margin-right: 15px;
 
     &::after {
       content: url("../images/footer/message_icon.svg");
