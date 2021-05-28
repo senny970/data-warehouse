@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Data Warehouse</title>
   </head>
@@ -26,16 +27,16 @@
             </div>
             <ul class="header-nav" id="menu">
               <li class="header-nav__link header-nav__link--active">
-                <a href="#">About</a>
+                <a href="#" id="linkAbout">About</a>
               </li>
               <li class="header-nav__link">
-                <a href="#">Help</a>
+                <a href="#" id="linkHelp">Help</a>
               </li>
               <li class="header-nav__link">
-                <a href="#">Features</a>
+                <a href="#" id="linkFeatures">Features</a>
               </li>
               <li class="header-nav__link">
-                <a href="#">Signup</a>
+                <a href="#" id="linkSignup">Signup</a>
               </li>
             </ul>
             <div class="header-action">
@@ -64,10 +65,15 @@
               of being stolen by others.
             </p>
             <button
-              class="header-content__btn btn btn-default"
-              data-aos="fade-right"
+              class="
+                header-content__btn
+                btn btn-default
+                animate__animated animate__bounce animate__delay-2s
+              "
+              data-aos="fade-in"
               data-aos-duration="400"
               data-aos-delay="700"
+              id="learnMore"
             >
               Learn more
             </button>
@@ -78,8 +84,9 @@
     <main class="main">
       <section
         class="section storage-bank-section"
-        data-aos="zoom-in"
+        data-aos="zoom-in-down"
         data-aos-delay="100"
+        id="storageBank"
       >
         <div class="container">
           <div class="storage-bank">
@@ -112,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="section features-section">
+      <section class="section features-section" id="features">
         <div class="container">
           <div class="features-section-wrapper">
             <h4
@@ -135,6 +142,8 @@
                 class="features__mobile-icon"
                 src="images/features/search-data__icon.png"
                 alt="24-hours-access"
+                data-aos="flip-left"
+                data-aos-delay="200"
               />
               <div
                 class="features-item features-item--search-data"
@@ -157,6 +166,8 @@
                 class="features__mobile-icon"
                 src="images/features/24-hours-access__icon.png"
                 alt="24-hours-access"
+                data-aos="flip-left"
+                data-aos-delay="200"
               />
               <div
                 class="features-item features-item--24-hours-access"
@@ -181,6 +192,8 @@
                 class="features__mobile-icon"
                 src="images/features/print-out__icon.png"
                 alt="24-hours-access"
+                data-aos="flip-left"
+                data-aos-delay="200"
               />
               <div
                 class="features-item features-item--print-out"
@@ -202,6 +215,8 @@
                 class="features__mobile-icon"
                 src="images/features/security-code__icon.png"
                 alt="24-hours-access"
+                data-aos="flip-left"
+                data-aos-delay="200"
               />
               <div
                 class="features-item features-item--security-code"
@@ -413,6 +428,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/scrollTo.js"></script>
     <script>
       $(".testiomonials-carousel").slick({
         infinite: false,
