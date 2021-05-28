@@ -415,9 +415,9 @@
     .copyright-mobile {
       display: block; } }
   .copyright-mobile__text {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
-    color: #000; }
+    color: #fff; }
 
 .btn {
   cursor: pointer;
