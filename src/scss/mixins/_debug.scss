@@ -1,0 +1,9 @@
+$debug: 0;
+
+*,
+*::after,
+*::before {
+  @if $debug == 1 {
+    outline: 1px solid black;
+  }
+}

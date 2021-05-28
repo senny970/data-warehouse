@@ -4,16 +4,35 @@
 }
 
 .footer-content {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   padding: 100px 0 100px 0;
 }
 
 .try-free {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .try-free-text {
   &__title {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
     font-size: 40px;
     line-height: 130%;
   }
@@ -24,15 +43,34 @@
 }
 
 .try-free-actions {
-  &__btn {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+
+  &__btn + &__btn {
     @media screen and (max-width: 815px) {
       margin-left: 5px;
     }
+
+    @media screen and (max-width: 425px) {
+      margin-top: 10px;
+    }
+
     margin-left: 30px;
   }
 }
 
 .nav-info {
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
   display: flex;
   justify-content: space-between;
   margin-top: 150px;
@@ -53,6 +91,10 @@
 }
 
 .nav-info-adress-logo {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+
   display: flex;
   align-items: center;
   padding-bottom: 65px;
@@ -66,6 +108,10 @@
 }
 
 .footer-nav-container {
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -96,6 +142,13 @@
 .social-media {
   margin-top: 8px;
 
+  &__title {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
   &__link {
     display: block;
     width: 50px;
@@ -107,6 +160,11 @@
 
   &__link--facebook {
     &::after {
+      @media screen and (max-width: 767px) {
+        left: 4%;
+        top: 26%;
+      }
+
       content: url("../images/footer/facebook_icon.svg");
       left: 39%;
       position: relative;
@@ -116,6 +174,10 @@
 
   &__link--twitter {
     &::after {
+      @media screen and (max-width: 767px) {
+        left: 4%;
+      }
+
       content: url("../images/footer/twitter_icon.svg");
       left: 33%;
       position: relative;
@@ -125,6 +187,10 @@
 
   &__link--instagram {
     &::after {
+      @media screen and (max-width: 767px) {
+        left: 3%;
+      }
+
       content: url("../images/footer/instagram_icon.svg");
       left: 33%;
       position: relative;
@@ -135,10 +201,18 @@
 
 .social-media-links {
   display: flex;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .copyright {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
+
   margin-top: 95px;
   display: flex;
   justify-content: space-between;
@@ -161,5 +235,21 @@
       position: relative;
       top: 24%;
     }
+  }
+}
+
+.copyright-mobile {
+  display: none;
+  background-color: #9c69e2;
+  padding: 9px 0 9px 0;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  &__text {
+    font-size: 12px;
+    text-align: center;
+    color: #000;
   }
 }
