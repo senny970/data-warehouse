@@ -58,7 +58,7 @@
       height: unset; } }
   @media (max-width: 1120px) {
     .header-inner {
-      padding-top: calc( 25px + 25 * ((100vw - 320px) / 800)); } }
+      padding-top: calc( 25px + 25 * ( (100vw - 320px) / 800 )); } }
 
 .header-controls {
   display: -webkit-box;
@@ -161,7 +161,7 @@
         content: unset; } }
     @media (max-width: 1120px) {
       .header-content::after {
-        background-size: calc( 0px + 885 * ((100vw - 320px) / 800)); } }
+        background-size: calc( 0px + 885 * ( (100vw - 320px) / 800 )); } }
   .header-content__mobile-img {
     display: none; }
     @media screen and (max-width: 768px) {
@@ -172,24 +172,24 @@
     font-size: 80px; }
     @media (max-width: 1120px) {
       .header-content__title {
-        font-size: calc( 30px + 50 * ((100vw - 320px) / 800)); } }
+        font-size: calc( 30px + 50 * ( (100vw - 320px) / 800 )); } }
   .header-content__text {
     margin-top: 50px;
     max-width: 380px;
     font-size: 18px; }
     @media (max-width: 1120px) {
       .header-content__text {
-        margin-top: calc( 25px + 25 * ((100vw - 320px) / 800)); } }
+        margin-top: calc( 25px + 25 * ( (100vw - 320px) / 800 )); } }
     @media (max-width: 1120px) {
       .header-content__text {
-        font-size: calc( 15px + 3 * ((100vw - 320px) / 800)); } }
+        font-size: calc( 15px + 3 * ( (100vw - 320px) / 800 )); } }
   .header-content__btn {
     margin-top: 50px;
     margin-bottom: 100px;
     margin-bottom: 100px; }
     @media (max-width: 1120px) {
       .header-content__btn {
-        margin-top: calc( 25px + 25 * ((100vw - 320px) / 800)); } }
+        margin-top: calc( 25px + 25 * ( (100vw - 320px) / 800 )); } }
     @media (max-width: 1120px) {
       .header-content__btn {
         margin-bottom: calc( 40px + 60 * ( (100vw - 320px) / 800 )); } }
@@ -403,7 +403,7 @@
     background-color: rgba(156, 105, 226, 0.2); }
     .copyright__callback::after {
       content: url("../images/footer/message_icon.svg");
-      left: 24%;
+      left: 23%;
       position: relative;
       top: 24%; }
 

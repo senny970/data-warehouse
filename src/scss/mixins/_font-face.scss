@@ -1,9 +1,8 @@
-
-
 @mixin generate-font-face(
   $font-families,
-  $font-weight: 'normal',
-  $font-style: 'normal' ) {
+  $font-weight: "normal",
+  $font-style: "normal"
+) {
   @each $ff, $urls in $font-families {
     @font-face {
       font-display: swap;
