@@ -71,25 +71,6 @@
     .header-controls {
       display: none; } }
 
-.header-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
-  .header-logo__circle {
-    width: 20px;
-    height: 20px;
-    background-color: #9c69e2;
-    border-radius: 20px;
-    margin-right: 10px; }
-  .header-logo__ellipse {
-    width: 20px;
-    height: 35px;
-    background: #f063b8;
-    border-radius: 20px; }
-
 .header-nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -299,6 +280,10 @@
     font-size: 20px;
     color: #212353;
     padding-left: 20px; }
+  .nav-info-adress-logo > a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
 
 .footer-nav-container {
   display: -webkit-box;

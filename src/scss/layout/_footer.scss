@@ -104,6 +104,10 @@
     color: $body-font-color-bold;
     padding-left: 20px;
   }
+
+  & > a {
+    width: max-content;
+  }
 }
 
 .footer-nav-container {

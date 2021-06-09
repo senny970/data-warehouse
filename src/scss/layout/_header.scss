@@ -25,26 +25,6 @@
   align-items: center;
 }
 
-.header-logo {
-  display: flex;
-  align-items: flex-end;
-
-  &__circle {
-    width: 20px;
-    height: 20px;
-    background-color: $color-violet;
-    border-radius: 20px;
-    margin-right: 10px;
-  }
-
-  &__ellipse {
-    width: 20px;
-    height: 35px;
-    background: $color-pink;
-    border-radius: 20px;
-  }
-}
-
 .header-nav {
   display: inline-flex;
   list-style: none;
