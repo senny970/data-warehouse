@@ -82,10 +82,15 @@
     color: $body-font-color-bold;
     font-weight: 700;
     margin-bottom: 10px;
+    width: max-content;
   }
 
   &__contacts {
-    font-size: 16px;
+    & > a {
+      font-size: 16px;
+      color: $body-font-color;
+      line-height: 25px;
+    }
   }
 }
 

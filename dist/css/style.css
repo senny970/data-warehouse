@@ -259,10 +259,15 @@
   font-family: "avenir_black", sans-serif;
   color: #212353;
   font-weight: 700;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
-.nav-info-adress__contacts {
-  font-size: 16px; }
+.nav-info-adress__contacts > a {
+  font-size: 16px;
+  color: #4b5d68;
+  line-height: 25px; }
 
 .nav-info-adress-logo {
   display: -webkit-box;
