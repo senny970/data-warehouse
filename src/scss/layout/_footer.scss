@@ -154,19 +154,19 @@
 
   &__link--facebook {
     &::after {
-      content: url("../images/footer/facebook_icon2.svg");
+      content: url("../images/footer/facebook_icon.svg");
     }
   }
 
   &__link--twitter {
     &::after {
-      content: url("../images/footer/twitter_icon2.svg");
+      content: url("../images/footer/twitter_icon.svg");
     }
   }
 
   &__link--instagram {
     &::after {
-      content: url("../images/footer/instagram_icon2.svg");
+      content: url("../images/footer/instagram_icon.svg");
     }
   }
 }
@@ -194,17 +194,8 @@
   }
 
   &__callback {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(156, 105, 226, 0.2);
-
     &::after {
       content: url("../images/footer/message_icon.svg");
-      left: 23%;
-      position: relative;
-      top: 24%;
     }
   }
 }
