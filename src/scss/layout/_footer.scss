@@ -149,51 +149,24 @@
   }
 
   &__link {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #e9e9ee;
     margin-right: 15px;
   }
 
   &__link--facebook {
     &::after {
-      @media screen and (max-width: 767px) {
-        left: 4%;
-        top: 26%;
-      }
-
-      content: url("../images/footer/facebook_icon.svg");
-      left: 39%;
-      position: relative;
-      top: 25%;
+      content: url("../images/footer/facebook_icon2.svg");
     }
   }
 
   &__link--twitter {
     &::after {
-      @media screen and (max-width: 767px) {
-        left: 4%;
-      }
-
-      content: url("../images/footer/twitter_icon.svg");
-      left: 33%;
-      position: relative;
-      top: 35%;
+      content: url("../images/footer/twitter_icon2.svg");
     }
   }
 
   &__link--instagram {
     &::after {
-      @media screen and (max-width: 767px) {
-        left: 3%;
-      }
-
-      content: url("../images/footer/instagram_icon.svg");
-      left: 33%;
-      position: relative;
-      top: 34%;
+      content: url("../images/footer/instagram_icon2.svg");
     }
   }
 }
